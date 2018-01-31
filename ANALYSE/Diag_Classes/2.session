@@ -1,0 +1,11 @@
+window_sizes 1500 787 212 566 600 82
+diagrams
+  active  classdiagram_ref 128002 // Objets
+    1282 629 100 4 0 0
+end
+show_stereotypes
+selected attribute_ref 128130 // generale
+open
+  class_ref 128258 // Ordres
+end
+end
