@@ -1,0 +1,140 @@
+format 75
+
+classinstance 128002 class_ref 129026 // operateur
+  name ""   xyz 26 19 2000 life_line_z 2000
+classinstance 128130 class_ref 135682 // main
+  name ""   xyz 138 26 2000 life_line_z 2000
+classinstance 128642 class_ref 128514 // HomeForm
+  name ""   xyz 237 26 2000 life_line_z 2000
+classinstance 130946 class_ref 128642 // ListOrdersForm
+  name ""   xyz 350 25 2000 life_line_z 2000
+classinstance 131074 class_ref 128898 // GeneralForm
+  name ""   xyz 472 27 2000 life_line_z 2000
+classinstance 131202 class_ref 128770 // IntermediatForm
+  name ""   xyz 577 28 2000 life_line_z 2000
+durationcanvas 128258 classinstance_ref 128002 // :operateur
+  color red
+  xyzwh 47 80 2010 11 653
+end
+durationcanvas 128386 classinstance_ref 128130 // :main
+  color gold
+  xyzwh 157 80 2010 11 619
+end
+durationcanvas 128770 classinstance_ref 128642 // :HomeForm
+  color darkblue
+  xyzwh 264 131 2010 11 185
+end
+durationcanvas 131330 classinstance_ref 130946 // :ListOrdersForm
+  color darkblue
+  xyzwh 389 161 2010 11 25
+end
+durationcanvas 131586 classinstance_ref 131074 // :GeneralForm
+  color darkblue
+  xyzwh 505 213 2010 11 25
+end
+durationcanvas 131842 classinstance_ref 131202 // :IntermediatForm
+  color darkblue
+  xyzwh 617 272 2010 11 25
+end
+durationcanvas 132098 classinstance_ref 128642 // :HomeForm
+  color darkgreen
+  xyzwh 264 354 2010 11 254
+  overlappingdurationcanvas 132354
+    color gold
+    xyzwh 270 372 2020 11 25
+  end
+  overlappingdurationcanvas 132610
+    color gold
+    xyzwh 270 406 2020 11 25
+  end
+end
+durationcanvas 132866 classinstance_ref 130946 // :ListOrdersForm
+  color darkgreen
+  xyzwh 389 458 2010 11 27
+end
+durationcanvas 133122 classinstance_ref 131074 // :GeneralForm
+  color darkgreen
+  xyzwh 505 497 2010 11 25
+end
+durationcanvas 133378 classinstance_ref 131202 // :IntermediatForm
+  color darkgreen
+  xyzwh 617 537 2010 11 25
+end
+durationcanvas 133634 classinstance_ref 128642 // :HomeForm
+  color gold
+  xyzwh 264 648 2010 11 25
+end
+msg 128514 synchronous
+  from durationcanvas_ref 128258
+  to durationcanvas_ref 128386
+  yz 80 2015 explicitmsg "lancer"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 100 66
+msg 128898 synchronous
+  from durationcanvas_ref 128386
+  to durationcanvas_ref 128770
+  yz 133 2015 unspecifiedmsg
+  stereotype "<<create>>" xyz 198 118 3000
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 131458 synchronous
+  from durationcanvas_ref 128770
+  to durationcanvas_ref 131330
+  yz 161 2015 unspecifiedmsg
+  stereotype "<<create>>" xyz 305 175 3000
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 131714 synchronous
+  from durationcanvas_ref 128770
+  to durationcanvas_ref 131586
+  yz 213 2015 unspecifiedmsg
+  stereotype "<<create>>" xyz 414 227 3000
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 131970 synchronous
+  from durationcanvas_ref 128770
+  to durationcanvas_ref 131842
+  yz 272 2015 unspecifiedmsg
+  stereotype "<<create>>" xyz 532 290 3000
+  show_full_operations_definition default drawing_language default show_context_mode default
+msg 132226 synchronous
+  from durationcanvas_ref 128386
+  to durationcanvas_ref 132098
+  yz 356 2015 msg operation_ref 134786 // "initialiser()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 201 342
+reflexivemsg 132482 synchronous
+  to durationcanvas_ref 132354
+  yz 372 2025 explicitmsg "lecture du fichier .ini"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 282 359
+reflexivemsg 132738 synchronous
+  to durationcanvas_ref 132610
+  yz 406 2025 msg operation_ref 134914 // "TesterBd()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 309 403
+msg 132994 synchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 132866
+  yz 458 2015 msg operation_ref 135042 // "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "infos"
+  label_xy 310 444
+msg 133250 synchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 133122
+  yz 497 2015 explicitmsg "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "infos"
+  label_xy 419 484
+msg 133506 synchronous
+  from durationcanvas_ref 132098
+  to durationcanvas_ref 133378
+  yz 537 2015 explicitmsg "init()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  args "infos"
+  label_xy 535 544
+msg 133762 synchronous
+  from durationcanvas_ref 128386
+  to durationcanvas_ref 133634
+  yz 648 2015 msg operation_ref 135170 // "show()"
+  show_full_operations_definition default drawing_language default show_context_mode default
+  label_xy 207 634
+end

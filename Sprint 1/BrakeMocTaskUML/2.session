@@ -1,0 +1,17 @@
+window_sizes 1600 838 212 566 729 35
+diagrams
+  classdiagram_ref 128130 // Premier modele objet
+    810 729 100 4 0 0
+  usecasediagram_ref 128386 //  BrakeMocTaskApp 
+    1101 545 100 4 0 0
+  active  sequencediagram_ref 134914 // lancer l'application
+    699 545 100 4 0 0
+end
+show_stereotypes
+selected sequencediagram_ref 134914 // lancer l'application
+open
+  class_ref 128642 // ListOrdersForm
+  class_ref 135682 // main
+  usecaseview_ref 128386 // vue des cas d'utilisation
+end
+end

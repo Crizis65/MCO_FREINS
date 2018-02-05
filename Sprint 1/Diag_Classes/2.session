@@ -1,0 +1,11 @@
+window_sizes 1600 838 155 623 600 82
+diagrams
+  active  classdiagram_ref 128002 // Objets
+    1382 682 100 4 0 0
+end
+show_stereotypes
+selected 
+package_ref 129 // Diag_Classes
+open
+end
+end

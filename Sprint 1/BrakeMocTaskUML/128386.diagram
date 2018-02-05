@@ -1,0 +1,22 @@
+format 75
+
+classcanvas 128002 class_ref 129026 // operateur
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz 10 175 2000
+end
+subject 128130 " BrakeMocTaskApp "
+  xyzwh 81 65 2000 364 503
+usecasecanvas 128258 usecase_ref 128130 // recuperer les tickets a traiter 
+  xyzwh 143 109 3005 64 32 label_xy 104 141
+end
+usecasecanvas 128386 usecase_ref 128258 // consulter un ticket 
+  xyzwh 285 155 3005 64 32 label_xy 272 187
+end
+usecasecanvas 128514 usecase_ref 128386 // imprimer fiche intervention 
+  xyzwh 137 205 3005 64 32 label_xy 105 237
+end
+classcanvas 128642 class_ref 129154 // Imprimante
+  class_drawing_mode default show_context_mode default show_stereotype_properties default
+  xyz 477 200 2000
+end
+end
