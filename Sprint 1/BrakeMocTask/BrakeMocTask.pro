@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,12 +17,14 @@ SOURCES += main.cpp\
         homeform.cpp \
     listeordersform.cpp \
     intermediatform.cpp \
-    generalform.cpp
+    generalform.cpp \
+    fichierlog.cpp
 
 HEADERS  += homeform.h \
     listeordersform.h \
     intermediatform.h \
-    generalform.h
+    generalform.h \
+    fichierlog.h
 
 FORMS    += homeform.ui \
     listeordersform.ui \

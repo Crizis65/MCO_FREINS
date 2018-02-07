@@ -7,10 +7,8 @@ int main(int argc, char *argv[])
 
     HomeForm w;
 
-
-
-
-    w.show();
+    if(w.initialiser()==1)
+        w.show();
     
     return a.exec();
 }

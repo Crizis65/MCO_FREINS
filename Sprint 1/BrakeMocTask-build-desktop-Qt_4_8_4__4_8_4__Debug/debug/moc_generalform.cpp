@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'generalform.h'
 **
-** Created: Thu 1. Feb 11:53:39 2018
+** Created: Wed 7. Feb 15:55:10 2018
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

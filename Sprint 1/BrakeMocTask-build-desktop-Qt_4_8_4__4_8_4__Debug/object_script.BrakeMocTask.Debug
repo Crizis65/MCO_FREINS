@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\homeform.o
+./debug\listeordersform.o
+./debug\intermediatform.o
+./debug\generalform.o
+./debug\fichierlog.o
+./debug\moc_homeform.o
+./debug\moc_listeordersform.o
+./debug\moc_intermediatform.o
+./debug\moc_generalform.o
+);

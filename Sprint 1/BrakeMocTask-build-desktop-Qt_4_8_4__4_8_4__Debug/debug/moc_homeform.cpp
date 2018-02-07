@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'homeform.h'
 **
-** Created: Thu 1. Feb 11:50:28 2018
+** Created: Wed 7. Feb 16:00:03 2018
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,25 +23,39 @@ static const uint qt_meta_data_HomeForm[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      10,    9,    9,    9, 0x08,
+      37,    9,    9,    9, 0x08,
+      61,    9,    9,    9, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_HomeForm[] = {
-    "HomeForm\0"
+    "HomeForm\0\0on_bt_listorders_clicked()\0"
+    "on_bt_general_clicked()\0"
+    "on_bt_Intermediat_clicked()\0"
 };
 
 void HomeForm::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        HomeForm *_t = static_cast<HomeForm *>(_o);
+        switch (_id) {
+        case 0: _t->on_bt_listorders_clicked(); break;
+        case 1: _t->on_bt_general_clicked(); break;
+        case 2: _t->on_bt_Intermediat_clicked(); break;
+        default: ;
+        }
+    }
     Q_UNUSED(_a);
 }
 
@@ -76,6 +90,11 @@ int HomeForm::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE

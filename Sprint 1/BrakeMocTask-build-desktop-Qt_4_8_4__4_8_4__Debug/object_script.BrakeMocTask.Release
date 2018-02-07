@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\homeform.o
+./release\listeordersform.o
+./release\intermediatform.o
+./release\generalform.o
+./release\fichierlog.o
+./release\moc_homeform.o
+./release\moc_listeordersform.o
+./release\moc_intermediatform.o
+./release\moc_generalform.o
+);
